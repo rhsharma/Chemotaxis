@@ -30,7 +30,7 @@ Bacteria [] group;
  	{
  		myX = 150;
  		myY = 150;
- 		bColor = color((int)(Math.random()*100+50), (int)(Math.random()*200+75), (int)(Math.random()*100+50));
+ 		bColor = color((int)(Math.random()*200+50), (int)(Math.random()*200+75), (int)(Math.random()*200+50));
  	}
  	void move()
  	{
