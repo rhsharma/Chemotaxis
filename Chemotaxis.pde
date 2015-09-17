@@ -1,31 +1,30 @@
-//Bacteria bob = new Bacteria();
+
 Bacteria [] group;
- //declare bacteria variables here   
+
  void setup()   
  {     
  	size(300, 300);
- 	group = new Bacteria [100];
+ 	group = new Bacteria [200];
+
+
  	for (int i = 0; i < group.length; i++)
  	{
  		group[i] = new Bacteria();
- 	}
-
- 	//initialize bacteria variables here   
+ 	} 
  }   
  void draw()   
  {    
- 	background(0);
+ 	background(255);
  	for (int i = 0; i < group.length; i++)
  	{
  		group[i].move();
  		group[i].show();
  	}
-
- 	//move and show the bacteria   
  }  
+ 
  class Bacteria    
  {     
- 	int myX, myY, bColor;
+	int myX, myY, bColor;
  	Bacteria()
  	{
  		myX = 150;
@@ -41,10 +40,7 @@ Bacteria [] group;
  	void show()
  	{
  		fill(bColor);
- 		ellipse(myX, myY, 5, 5);
- 	}
-
-
-
- 	//lots of java!   
+ 		ellipse(myX, myY, ((int)(Math.random()*10)), ((int)(Math.random()*10)));
+ 	} 
  }    
+
