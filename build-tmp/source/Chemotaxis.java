@@ -21,8 +21,6 @@ Bacteria [] group;
  {     
  	size(300, 300);
  	group = new Bacteria [200];
-
-
  	for (int i = 0; i < group.length; i++)
  	{
  		group[i] = new Bacteria();
@@ -30,7 +28,8 @@ Bacteria [] group;
  }   
  public void draw()   
  {    
- 	background(255);
+ 	background(0);
+ 	noStroke();
  	for (int i = 0; i < group.length; i++)
  	{
  		group[i].move();
